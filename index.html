@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="rw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brillant - Agasobanuye Box</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+    .movie-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .movie-box:hover {
+      transform: scale(1.03);
+      z-index: 2;
+    }
+    .movie-box img {
+      width: 100%;
+      border-radius: 15px;
+    }
+    .movie-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 15px;
+      text-align: center;
+    }
+    .movie-box:hover .movie-overlay {
+      opacity: 1;
+    }
+    .movie-buttons a {
+      margin: 5px;
+    }
+    .badge-sub {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: crimson;
+      color: white;
+      padding: 3px 7px;
+      font-size: 12px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .rating-stars {
+      color: gold;
+      margin-bottom: 8px;
+    }
+    .share-buttons {
+      margin-top: 10px;
+    }
+    .share-buttons a {
+      margin: 0 5px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center text-danger mb-4">Brillant - Agasobanuye Box</h1>
+    <div class="row g-4">
+      <!-- Movie Box -->
+      <div class="col-md-4 col-sm-6">
+        <div class="movie-box">
+          <span class="badge-sub">Agasobanuye</span>
+          <img src="https://via.placeholder.com/350x500" alt="G20 Movie Poster" loading="lazy">
+          <div class="movie-overlay">
+            <div class="rating-stars">⭐⭐⭐⭐☆</div>
+            <h5 class="mb-1">G20 (2024)</h5>
+            <p class="mb-1">Action, Thriller</p>
+            <p class="mb-2"><small>Actors: Viola Davis, John Smith</small></p>
+            <div class="movie-buttons">
+              <a href="#" class="btn btn-danger btn-sm">Watch Trailer</a>
+              <a href="#" class="btn btn-outline-light btn-sm">Watch Full Movie</a>
+              <a href="#" class="btn btn-outline-warning btn-sm">Download HD</a>
+            </div>
+            <div class="share-buttons">
+              <a href="#" title="Share on Facebook">🔗</a>
+              <a href="#" title="Share on WhatsApp">🟢</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Movie Box --><!-- Ongeraho andi mafilime hano -->
+
+</div>
+
+  </div>
+</body>
+</html>
